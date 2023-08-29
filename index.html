@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Responsiva</title>
+  <title>Cats R Us</title>
   <!-- Enlace a Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -64,6 +64,19 @@
       right: 20px;
 
     }
+    #inicio {
+      height: 100vh; /* El carrusel ocupará todo el alto de la pantalla */
+      background-color: #00ced1; /* Turquoise color */
+    }
+    .carousel-inner {
+      height: 100%; /* Cambia el valor para ajustar la altura deseada */
+      max-height: 500px; /* Añade un límite máximo de altura */
+    }
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
   </style>
 </head>
 <body>
@@ -107,7 +120,7 @@
     <div class="row">
       <div class="col-md-12">
         <!-- Carrusel de imágenes -->
-        <div id="carouselInicio" class="carousel slide" data-ride="carousel">
+        <div id="carouselInicio"  class="carousel slide d-flex align-items-center" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="imagenes/ca.png" alt="Gato en movimiento 1" class="img-fluid w-100">
@@ -151,9 +164,8 @@
         <p>Contacto: gato1@example.com</p>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="imagenes/calle2.jpg" alt="Gato 2" class="img-fluid rounded">
-        <p class="mt-2">Publicidad.</p>
-        <p>Contacto: gato2@example.com</p>
+        
+       <a href="https://luissebastian28.github.io/catStore/" target=_blank  ><img src="imagenes/ropa2.jpeg" alt="Gato 2" class="img-fluid rounded"></a>
       </div>
       <div class="col-md-4 mb-4">
         <img src="imagenes/calle3.jpg" alt="Gato 3" class="img-fluid rounded">
@@ -241,16 +253,16 @@
       <!-- Espacio para posibles anuncios -->
 <div class="position-fixed d-none d-lg-block" style="top: 50%; transform: translateY(-50%); right: 0;">
   <div class="card" style="width: 150px;">
-    <img src="anuncio1.jpg" class="card-img-top" alt="Anuncio 1">
+    <a href="https://melinagutierrez.github.io/RascaFelicidad/" target=_blank><img src="imagenes/rascadores.jpeg" class="card-img-top" alt="Anuncio 1"></a>
+    
     <div class="card-body">
-      <h5 class="card-title">Anuncio Destacado</h5>
       <button class="btn btn-danger close-btn">Cerrar</button>
     </div>
   </div>
   <div class="card mt-3" style="width: 150px;">
-    <img src="anuncio2.jpg" class="card-img-top" alt="Anuncio 2">
+    <a href="https://6abriel1chiro.github.io/gatitos-ecommerce/" target=_blank> <img src="imagenes/peluqueria.jpeg" class="card-img-top" alt="Anuncio 2"></a>
     <div class="card-body">
-      <h5 class="card-title">Oferta Especial</h5>
+   
       
       <button class="btn btn-danger close-btn">Cerrar</button>
     </div>
@@ -259,17 +271,18 @@
 
       <div class="position-fixed d-none d-lg-block" style="top: 50%; transform: translateY(-50%); left: 0;">
         <div class="card" style="width: 150px;">
-          <img src="anuncio1.jpg" class="card-img-top" alt="Anuncio 1">
+          <a href="https://mark00es.github.io/PaginaComidaGatos/" target=_blank><img src="imagenes/comida2.png" class="card-img-top" alt="Anuncio 1"></a>
+          
           <div class="card-body">
-            <h5 class="card-title">Anuncio Destacado</h5>
+          
             
             <button class="btn btn-danger close-btn">Cerrar</button>
           </div>
         </div>
         <div class="card mt-3" style="width: 150px;">
-          <img src="anuncio2.jpg" class="card-img-top" alt="Anuncio 2">
+          <a href="https://bit.ly/44puQGw" target=_blank><img src="imagenes/toys.jpeg" class="card-img-top" alt="Anuncio 1"></a>
           <div class="card-body">
-            <h5 class="card-title">Oferta Especial</h5>
+          
 
             <button class="btn btn-danger close-btn " >Cerrar</button>
           </div>
